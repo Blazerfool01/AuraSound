@@ -1,0 +1,38 @@
+{
+  "evidence_id": "ev_f49de126a601d998f2454a092ebc1e85c659bb1c91bc556f817a704765db5e6b",
+  "operation": "capture_browser_scenario",
+  "confidence": "observed",
+  "authority": "controlled-replay",
+  "reference": "https://open.spotify.com/",
+  "date": "2026-11-01",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "browser": {
+    "mode": "launch",
+    "process_ownership": "provider-owned",
+    "cleanup": "terminated-owned-process",
+    "product": "Chromium",
+    "version": "156.0.8078.76"
+  },
+  "observations": [
+    "Top navigation: Home, search combobox, Browse, authentication controls",
+    "Library sidebar: Create, Create playlist, podcast invitation",
+    "Main rows: trending songs, popular artists, albums, radio, charts",
+    "Player transport controls present but disabled while logged out",
+    "Privacy choice dialog visible; cover images remained colored placeholders"
+  ],
+  "accessibility_sha256": "edbd5f0320c79b1ed61f98095bb0c04067fcab67635f7056fd66ad9fcfa16ac9",
+  "screenshot_sha256": "b47f9f77331086e4a8bfdcf8164c63e12f6c6f96f0be7b4d1b7285198b611405",
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+    "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+    "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+    "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+    "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+    "Storage values are hashed only after declared-secret redaction.",
+    "Browser host platform and architecture were not observed."
+  ]
+}
